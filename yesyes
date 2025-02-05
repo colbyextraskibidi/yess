@@ -772,10 +772,8 @@ notify = function(events)
         if event.enabled == true then
             notifygui(event.text, event.r, event.g, event.b)
             count = count + 1
-            if string.find(event.text, "Sunken Chest") 
-                if autohop then
-            notifygui("Autohopping", 247, 94, 229)
-            teleport()
+            if string.find(event.text, "Sunken Chest") then
+                potentialsunkenchest()
             end
         end
     end
